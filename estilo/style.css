@@ -1,0 +1,469 @@
+.barra {
+    font-family: cursive;
+    font-size: 35px;
+}
+
+.barrah {
+    margin: 30px 0 0 0;
+}
+
+.iconorus {
+
+    height: 75px;
+    width: 75px;
+}
+
+.barrah ul {
+    background-color: aqua;
+}
+
+h2 {
+
+    color: rgb(13, 13, 13);
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 50px
+}
+
+.index {
+    background-image: url(../imagenes/asd.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carrusel {
+    height: 40%;
+    width: 25%;
+    margin: 0 auto;
+    padding: 40px;
+    
+}
+
+
+.articleindex {
+    color: aliceblue;
+    padding: 50px 50px 0 30px;
+    border: 1px solid yellow;
+    background-color: cornflowerblue;
+}
+
+.footer1 {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    background-color: bisque;
+}
+
+.ul_footer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    list-style-type: none;
+    padding: 0;
+   
+}
+
+.ul_footer li {
+    margin-bottom: 10px;
+}
+
+.ul_footer li a {
+    display: block;
+}
+
+.ul_footer li a img {
+    width: 60px;
+    height: auto;
+    padding: 20px 0 0 20px;
+    
+}
+.buscador {
+    background-color: rgb(201, 234, 234);
+    color: blueviolet;
+    
+}
+
+
+
+/* PAGINA DE CHICOS */
+
+
+
+.chicosm{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    
+    
+}
+
+.barra_chicos {
+    padding: 30px;
+    
+    
+}
+.li1chicos{
+    padding: 0 30px;
+}
+.imgchicos1{
+    height: 110px;
+    padding: 0 0 15px 430px;
+    
+}
+.divchicos1{
+    background-color: rgb(42, 106, 129);
+    font-size: 40px;
+    border: 2px solid black;
+    
+    
+}
+.divchicos2{
+    background-color: black;
+}
+
+.horizontal-images {
+    display: flex; 
+    list-style-type: none; 
+    padding: 30px; 
+    justify-content: center;
+    }
+  
+.horizontal-images img {
+    width: auto; 
+    height: 230px; 
+    margin-right: 10px; 
+  }
+
+.footer2 {
+    display: flex;
+    justify-content: flex-end;
+    background-color: antiquewhite;
+    
+}
+
+.ul_footer_chicos {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    list-style-type: none;
+    
+    
+   
+}
+
+.ul_footer_chicos li {
+    margin-bottom: 10px;
+}
+
+.ul_footer_chicos li a {
+    display: block;
+}
+
+.ul_footer_chicos li a img {
+    width: 60px;
+    height: auto;
+    padding: 20px 0 0 20px;
+}   
+
+
+.article_chicos{
+    font-family: cursive;
+    padding: 0 0 0 30px;
+    font-size: 15px;
+    color:rgb(30, 177, 210)
+}
+
+
+    
+
+
+/* PAGINA CHICAS */
+
+.chicasm{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    
+    
+}
+
+.barra_chicas {
+    padding: 30px;
+    
+    
+    
+    
+}
+
+.li1chicas{
+    padding: 0 30px;
+    font-family: cursive;
+    
+    
+}
+.imgchicas1{
+    height: 110px;
+    padding: 0 0 15px 430px;
+    
+}
+.divchicas1{
+    background-color: rgb(188, 144, 188);
+    font-size: 40px;
+    border: 2px solid black;
+    font-family: cursive;
+    
+    
+}
+.divchicas2{
+    background-color: black;
+}
+
+.horizontal-imagesm {
+    display: flex; 
+    list-style-type: none; 
+    padding: 30px; 
+    justify-content: center;
+    
+    }
+  
+.horizontal-imagesm img {
+    width: auto; 
+    height: 230px; 
+    margin-right: 10px; 
+    
+  }
+
+.footer3 {
+    display: flex;
+    justify-content: flex-end;
+    background-color: antiquewhite;
+    
+}
+
+.ul_footer_chicas {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    list-style-type: none;
+    
+    
+   
+}
+
+.ul_footer_chicas li {
+    margin-bottom: 10px;
+}
+
+.ul_footer_chicas li a {
+    display: block;
+}
+
+.ul_footer_chicas li a img {
+    width: 60px;
+    height: auto;
+    padding: 20px 0 0 20px;
+}   
+
+
+
+.article_chicas{
+    font-family: cursive;
+    padding: 0 0 0 30px;
+    font-size: 15px;
+    color:rgb(5, 6, 6)
+
+
+}
+
+/* PAGINA CALZADOS */
+
+.calzadosm{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    
+    
+}
+
+.barra_calzados {
+    padding: 30px;
+    
+    
+    
+    
+}
+
+.li1calzados{
+    padding: 0 30px;
+    font-family: cursive;
+    
+    
+}
+.imgcalzados1{
+    height: 110px;
+    padding: 0 0 15px 430px;
+    
+}
+.divcalzados1{
+    background-color: rgb(240, 45, 19);
+    font-size: 40px;
+    border: 2px solid black;
+    font-family: cursive;
+    color: aliceblue;
+    
+    
+}
+
+
+.horizontal-imagescal {
+    display: flex; 
+    list-style-type: none; 
+    padding: 30px; 
+    justify-content: center;
+    
+    }
+  
+.horizontal-imagescal img {
+    width: auto; 
+    height: 230px; 
+    margin-right: 10px; 
+    
+  }
+
+.footer4 {
+    display: flex;
+    justify-content: flex-end;
+    background-color: antiquewhite;
+    
+}
+
+.ul_footer_calzados {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    list-style-type: none;
+    
+    
+   
+}
+
+.ul_footer_calzados li {
+    margin-bottom: 10px;
+}
+
+.ul_footer_calzados li a {
+    display: block;
+}
+
+.ul_footer_calzados li a img {
+    width: 60px;
+    height: auto;
+    padding: 20px 0 0 20px;
+}   
+
+
+
+.article_calzados{
+    font-family: cursive;
+    padding: 0 0 0 30px;
+    font-size: 15px;
+    color: crimson;
+    
+
+
+}
+
+/* PAGINA ACESSORIOS */
+
+.acessoriosm{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    
+    
+}
+
+.barra_acessorios {
+    padding: 30px;
+    
+    
+    
+    
+}
+
+.li1acessorios{
+    padding: 0 30px;
+    font-family: cursive;
+    
+    
+}
+.imgacessorios1{
+    height: 110px;
+    padding: 0 0 15px 430px;
+    
+}
+.divacessorios1{
+    background-color: rgb(184, 246, 122);
+    font-size: 40px;
+    border: 2px solid black;
+    font-family: cursive;
+    color: rgb(9, 18, 27);
+    
+    
+}
+
+
+.horizontal-imagesacc {
+    display: flex; 
+    list-style-type: none; 
+    padding: 30px; 
+    justify-content: center;
+    
+    }
+  
+.horizontal-imagesacc img {
+    width: auto; 
+    height: 230px; 
+    margin-right: 10px; 
+    
+  }
+
+.footer5 {
+    display: flex;
+    justify-content: flex-end;
+    background-color: antiquewhite;
+    
+}
+
+.ul_footer_acessorios {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    list-style-type: none;
+    
+    
+   
+}
+
+.ul_footer_acessorios li {
+    margin-bottom: 10px;
+}
+
+.ul_footer_acessorios li a {
+    display: block;
+}
+
+.ul_footer_acessorios li a img {
+    width: 60px;
+    height: auto;
+    padding: 20px 0 0 20px;
+}   
+
+
+
+.article_acessorios{
+    font-family: cursive;
+    padding: 0 0 0 30px;
+    font-size: 15px;
+    color: rgb(30, 20, 220);
+    
+
+
+}

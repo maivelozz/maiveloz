@@ -102,22 +102,27 @@ h1 {
 .colorflechas {
   background-color: black;
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .nav {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .nav-item {
-    margin-bottom: 10px;
-  }
-
-  .articleindex {
     padding: 20px;
   }
 
-  .col-lg-4 {
-    display: none;
+  .h2index {
+    font-size: 24px;
+  }
+
+  .imgindex {
+    width: 30%;
+  }
+}
+@media (max-width: 767px) {
+  .carousel-item img {
+    width: 110%;
+  }
+
+  .carousel-inner {
+    margin-left: -5%;
+    margin-right: -5%;
   }
 }
 
@@ -135,7 +140,6 @@ h1 {
 }
 .divchicosmoda img:hover {
   transform: scale(1.1);
-  
 }
 .text_encimah {
   position: absolute;
@@ -244,27 +248,53 @@ h1 {
   font-size: 15px;
   color: rgb(30, 177, 210);
 }
-@media (max-width: 768px) {
-  .chicosm {
-    grid-template-columns: 1fr;
+@media (max-width: 767px) {
+  body {
+    padding: 10px;
   }
 
-  .imgchicos1 {
-    padding-left: 15px;
+  header {
+    text-align: center;
   }
 
-  .divchicos1 {
-    font-size: 20px;
-  }
-
-  .article_chicos,
-  .ul_footer_chicos {
+  .navchicos ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 0;
   }
 
-  .ul_footer_chicos li a img {
-    width: 30px;
-    padding: 5px;
+  .navchicos li {
+    margin: 5px;
+  }
+
+  .accordion-button divh2 {
+    text-align: center;
+  }
+
+  .article_chicos .row {
+    flex-direction: column;
+  }
+
+  .divchicosmoda {
+    margin-bottom: 20px;
+  }
+
+  .horizontal-imagesch {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .horizontal-imagesch li {
+    margin: 5px;
+    flex-basis: 50%;
+  }
+
+  .imgchicos1 {
+    max-width: 100%;
+    height: auto;
   }
 }
 
@@ -382,27 +412,68 @@ h1 {
 .imgchicass:hover {
   transform: scale(1.1);
 }
-@media (max-width: 768px) {
-  .chicasm {
-    grid-template-columns: 1fr;
+
+@media (max-width: 767px) {
+  .bodychicas {
+    padding-top: 50px;
+  }
+
+  .h1_chicas {
+    font-size: 24px;
+  }
+
+  .navchicas {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+
+  .navchicas ul {
+    margin-top: 20px;
+  }
+
+  .h2chicast {
+    margin-top: 20px;
+  }
+
+  .accordion-header h2 {
+    font-size: 18px;
+  }
+
+  .imgchicass {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .horizontal-imagesm {
+    padding-left: 0;
+  }
+
+  .horizontal-imagesm li {
+    width: 100%;
+    margin-bottom: 20px;
   }
 
   .imgchicas1 {
-    padding-left: 15px;
+    height: 100%;
+    margin-bottom: 20px;
+    
   }
 
-  .divchicas1 {
-    font-size: 20px;
+  .footer3 {
+    padding-top: 20px;
   }
-
-  .article_chicas,
+  
   .ul_footer_chicas {
-    padding: 0;
+    justify-content: center;
   }
 
-  .ul_footer_chicas li a img {
-    width: 30px;
-    padding: 5px;
+  .ul_footer_chicas li {
+    margin-right: 10px;
+  }
+  .h2chicast {
+    padding: 90px 0 20px;
+    order: 3;
   }
 }
 
@@ -514,29 +585,21 @@ h1 {
   height: auto;
   padding: 20px 0 0 20px;
 }
-@media (max-width: 768px) {
-  .caldazadosm {
-    grid-template-columns: 1fr;
+@media (max-width: 767px) {
+  .h3calzados {
+    transform: none; 
+    padding-left: 10px; 
   }
 
-  .imgcaldazos1 {
-    padding-left: 15px;
+  .imgcalzadosh3 {
+    width: 50%; 
   }
-
-  .divcalzados1 {
-    font-size: 20px;
-  }
-
-  .article_calzados,
-  .ul_footer_calzados {
-    padding: 0;
-  }
-
-  .ul_footer_calzados li a img {
-    width: 30px;
-    padding: 5px;
+  .h2sub {
+    padding: 0 0 0 15px; 
+    margin-top: 10px; 
   }
 }
+
 
 /* PAGINA ACESSORIOS */
 

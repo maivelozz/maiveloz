@@ -1,0 +1,417 @@
+
+// PAGINA PRINCIPAL //
+
+// header //
+
+$header-barrah-margin: 30px 0 0 0;
+$header-barrah-ul-bg-color: aqua;
+$header-iconorus-height: 75px;
+$header-iconorus-width: 75px;
+$header-h1-color: #131313;
+$header-h1-text-align: center;
+$header-h1-font-size: 90px;
+$header-h1-font-family: cursive;
+$header-h1-padding-top: 50px;
+$header-barra-font-family: Arial, sans-serif;
+$header-barra-font-size: 35px;
+$header-barra-hover-transform-scale: 1.2;
+$header-barra-li-a-hover-transform-scale: 1.5;
+$header-nav-animation-duration: 3s;
+$header-nav-animation-color1: aqua;
+$header-nav-animation-color2: rgb(255, 255, 0);
+
+// section //
+
+$section-h2index-padding: 0 0 30px;
+$section-colorflechas-bg-color: black;
+$section-imgindex-padding: 0 0 40px;
+$section-carrusel-height: 40%;
+$section-carrusel-width: 25%;
+$section-articleindex-color: aliceblue;
+$section-articleindex-padding: 50px 50px 0 30px;
+
+// footer //
+
+$footer-background-color: rgb(97, 177, 161);
+$footer-mainfooter-ul-img-size: 60px;
+
+// @media //
+
+$media-lg-nav-padding: 20px;
+$media-lg-h2index-font-size: 24px;
+$media-lg-imgindex-width: 30%;
+
+$media-sm-carousel-item-img-width: 110%;
+$media-sm-carousel-inner-margin: -5%;
+
+
+// PAGINA CHICOS //
+
+// Header
+
+$header-h1chicos-text-align: center;
+$header-h1chicos-padding: 10px;
+$header-h1chicos-margin: 20px 0 40px;
+$header-h1chicos-color: aliceblue;
+$header-h1chicos-background-color: coral;
+$header-h1chicos-font-family: Arial, Helvetica, sans-serif;
+$header-h1chicos-animation: moveText 4s infinite alternate;
+
+$navchicos-ul-list-style: none;
+$navchicos-ul-padding: 0;
+$navchicos-ul-margin: 0;
+$navchicos-ul-display: flex;
+$navchicos-ul-flex-direction: column;
+
+$navchicos-li-margin-bottom: 10px;
+$navchicos-li-font-size: 37px;
+$navchicos-li-font-family: cursive;
+$navchicos-li-transition: transform 1.0s;
+
+$navchicos-li-a-text-decoration: none;
+$navchicos-li-a-color: black;
+
+$navchicos-li-a-hover-transform: scale(0.9);
+
+// Section //
+
+$chicosm-display: flex;
+$chicosm-flex-direction: column;
+$chicosm-padding: 30px;
+
+$divchicosmoda-position: relative;
+
+$divchicosmoda-img-max-width: 150%;
+$divchicosmoda-img-height: auto;
+$divchicosmoda-img-transition: transform 0.3s ease;
+
+$divchicosmoda-img-hover-transform: scale(1.1);
+
+$divchicosmoda-text_encimah-position: absolute;
+$divchicosmoda-text_encimah-bottom: 10px;
+$divchicosmoda-text_encimah-left: 50%;
+$divchicosmoda-text_encimah-transform: translateX(-50%);
+$divchicosmoda-text_encimah-background-color: rgba(0, 0, 0, 0.7);
+$divchicosmoda-text_encimah-color: white;
+$divchicosmoda-text_encimah-padding: 10px;
+$divchicosmoda-text_encimah-font-size: 16px;
+
+$article_chicos-font-family: cursive;
+$article_chicos-padding: 0 15px;
+$article_chicos-font-size: 15px;
+$article_chicos-color: rgb(30, 177, 210);
+
+$imgchicos1-height: 110px;
+$imgchicos1-padding: 0 0 15px 15px;
+
+$divchicos1-background-color: rgb(42, 106, 129);
+$divchicos1-font-size: 24px;
+$divchicos1-border: 2px solid black;
+
+$divchicos2-background-color: black;
+
+$horizontal-imagesch-display: flex;
+$horizontal-imagesch-list-style-type: none;
+$horizontal-imagesch-padding: 30px;
+
+$horizontal-imagesch-img-width: auto;
+$horizontal-imagesch-img-height: 230px;
+$horizontal-imagesch-img-margin-right: 10px;
+
+// Footer //
+
+$footer-background-color: rgb(97, 177, 161);
+$footer-padding: 10px;
+
+$footer2-display: flex;
+$footer2-justify-content: flex-end;
+$footer2-align-items: flex-end;
+
+$main-display: flex;
+$main-flex-direction: row;
+$main-align-items: flex-end;
+
+$ul_footer_chicos-display: flex;
+$ul_footer_chicos-flex-direction: row;
+$ul_footer_chicos-list-style: none;
+$ul_footer_chicos-margin: 0;
+$ul_footer_chicos-padding: 0;
+
+$footer-li-margin-right: 15px;
+
+$footer-img-width: 60px;
+$footer-img-height: 60px;
+
+// Mobile
+
+$media-max-width: 767px;
+
+$body-padding: 10px;
+
+$header-text-align: center;
+
+$navchicos-ul-display-mobile: flex;
+$navchicos-ul-flex-wrap: wrap;
+$navchicos-ul-justify-content: center;
+$navchicos-ul-padding-mobile: 0;
+
+$navchicos-li-margin-mobile: 5px;
+
+$accordion-button-h2-text-align: center;
+
+$article_chicos-row-flex-direction: column;
+
+$divchicosmoda-margin-bottom: 20px;
+
+$horizontal-imagesch-display-mobile: flex;
+$horizontal-imagesch-flex-wrap: wrap;
+$horizontal-imagesch-justify-content: center;
+$horizontal-imagesch-padding-mobile: 0;
+
+$horizontal-imagesch-li-margin-mobile: 5px;
+$horizontal-imagesch-li-flex-basis: 50%;
+
+$imgchicos1-max-width: 100%;
+$imgchicos1-height-mobile: auto;
+
+// PAGINA CHICAS //
+
+// Header //
+$color-bg-h1_chicas: rgb(188, 144, 188);
+$font-size-h1_chicas: 70px;
+$padding-h1_chicas: 20px 0 20px 0;
+$margin-top-h1_chicas: 20px;
+$font-family-h1_chicas: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+$text-align-h2chicast: center;
+$font-family-h2chicast: cursive;
+$font-size-h2chicast: 55px;
+$text-decoration-h2chicast: underline;
+$margin-top-h2chicast: -120px;
+
+$padding-li-navchicas: 20px;
+$font-size-li-navchicas: 30px;
+$font-family-li-navchicas: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+// Section //
+
+$color-article_chicas: rgb(5, 6, 6);
+$font-family-article_chicas: cursive;
+$padding-article_chicas: 0 0 0 30px;
+$font-size-article_chicas: 15px;
+
+$height-imgchicas1: 110px;
+$padding-imgchicas1: 0 0 15px 430px;
+
+$height-imgchicass: 220px;
+$width-imgchicass: 220px;
+$border-radius-imgchicass: 50%;
+
+$background-color-divchicas1: rgb(188, 144, 188);
+$font-size-divchicas1: 40px;
+$border-width-divchicas1: 2px;
+$border-color-divchicas1: black;
+$font-family-divchicas1: cursive;
+
+$background-color-divchicas2: black;
+
+$width-img-horizontal-imagesm: 150px;
+$height-img-horizontal-imagesm: 150px;
+$transition-duration-img-horizontal-imagesm: 0.3s;
+$transform-scale-hover-img-horizontal-imagesm: 1.2;
+
+// Footer //
+
+$background-color-footer: rgb(97, 177, 161);
+$padding-footer: 10px;
+
+$align-items-footer3: flex-end;
+
+$width-img-ul_footer_chicas: 60px;
+$height-img-ul_footer_chicas: 60px;
+
+// Mobile //
+
+$padding-top-bodychicas-mobile: 50px;
+$font-size-h1_chicas-mobile: 24px;
+$padding-bottom-ul-navchicas-mobile: 10px;
+$margin-top-ul-navchicas-mobile: 20px;
+$margin-top-h2chicast-mobile: 20px;
+$font-size-h2-accordion-header-mobile: 18px;
+$margin-bottom-imgchicass-mobile: 20px;
+$padding-left-horizontal-imagesm-mobile: 0;
+$width-li-horizontal-imagesm-mobile: 100%;
+$margin-bottom-li-horizontal-imagesm-mobile: 20px;
+$height-imgchicas1-mobile: 100%;
+$margin-bottom-imgchicas1-mobile: 20px;
+$padding-top-footer3-mobile: 20px;
+$margin-right-li-ul_footer_chicas-mobile: 10px;
+$padding-h2chicast-mobile: 90px 0 20px;
+$order-h2chicast-mobile: 3;
+
+
+// PAGINA DE CALZADOS //
+
+// header //
+
+$h1calzados-padding-top: 20px;
+$h1calzados-padding-bottom: 40px;
+$h1calzados-font-size: 70px;
+$h1calzados-font-family: fantasy;
+
+$h2sub-padding: 0 0 0 130px;
+$h2sub-font-size: 65px;
+$h2sub-font-family: Georgia, 'Times New Roman', Times, serif;
+$h2sub-transition: font-size 0.3s, background-color 0.3s;
+$h2sub-hover-font-size: 70px;
+$h2sub-hover-background-color: red;
+
+// Section //
+
+$ulnavcal-barra_calzados-font-size: 30px;
+$ulnavcal-barra_calzados-margin: 25px;
+$ulnavcal-barra_calzados-list-style-type: none;
+$ulnavcal-barra_calzados-font-family: cursive;
+$ulnavcal-barra_calzados-transition: transform 0.4s;
+$ulnavcal-barra_calzados-hover-transform: scale(1.05);
+
+$calzadosm-padding: 30px;
+
+$imgcalzadosh3-padding: 40px 0 0 110px;
+
+$imgcalzados1-height: 110px;
+$imgcalzados1-padding: 0 0 15px 430px;
+
+$divcalzados1-background-color: rgb(240, 144, 19);
+$divcalzados1-font-size: 40px;
+$divcalzados1-border: 2px solid black;
+$divcalzados1-font-family: cursive;
+$divcalzados1-color: aliceblue;
+$divcalzados1-margin-top: 30px;
+
+$horizontal-imagescal-padding: 30px;
+$horizontal-imagescal-justify-content: center;
+$horizontal-imagescal-img-width: auto;
+$horizontal-imagescal-img-height: 230px;
+$horizontal-imagescal-img-margin-right: 10px;
+
+$article_calzados-main-h3calzados-text-align: center;
+$article_calzados-main-h3calzados-margin-top: 130px;
+$article_calzados-main-h3calzados-text-decoration: underline;
+$article_calzados-main-h3calzados-animation: vibracion 0.5s infinite;
+
+@keyframes vibracion {
+  0% {
+    transform: translateZ(0);
+  }
+  25% {
+    transform: translateZ(-5px) rotate(1deg);
+  }
+  50% {
+    transform: translateZ(5px) rotate(-1deg);
+  }
+  75% {
+    transform: translateZ(-5px) rotate(-1deg);
+  }
+  100% {
+    transform: translateZ(0);
+  }
+}
+
+// Footer //
+
+$footer-background-color: rgb(97, 177, 161);
+$footer-padding: 10px;
+$footer4-justify-content: flex-end;
+$footer4-align-items: flex-end;
+$ul_footer_calzados-display: flex;
+$ul_footer_calzados-flex-direction: row;
+$ul_footer_calzados-list-style: none;
+$ul_footer_calzados-margin: 0;
+$ul_footer_calzados-padding: 0;
+$ul_footer_calzados-li-margin-right: 15px;
+$ul_footer_calzados-img-width: 60px;
+$ul_footer_calzados-img-height: 60px;
+
+
+// Mobile //
+
+$footer-display: flex;
+$footer-justify-content: center;
+$footer-align-items: center;
+$footer-flex-direction: column;
+$h3calzados-transform: none;
+$h3calzados-padding-left: 10px;
+$imgcalzadosh3-width: 50%;
+$h2sub-text-align: center;
+$h2sub-padding: 0 15px;
+$h2sub-margin-top: 10px;
+
+
+// ACESSORIOS //
+
+// Header //
+
+$h1acessorios-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+$h1acessorios-padding: 20px;
+
+$navacessorios-ul-li-a-text-decoration: none;
+$navacessorios-ul-li-a-font-family: fantasy;
+$navacessorios-ul-li-a-font-size: 30px;
+
+$navacessorios-liacessoriosnav-list-style-type: none;
+
+// Section //
+
+$acessoriosm-padding: 30px;
+
+$divacessorios1-background-color: rgb(184, 246, 122);
+$divacessorios1-font-size: 40px;
+$divacessorios1-border: 2px solid black;
+$divacessorios1-font-family: cursive;
+$divacessorios1-color: rgb(9, 18, 27);
+
+$article_acessorios-font-family: cursive;
+$article_acessorios-padding: 0 0 0 30px;
+$article_acessorios-font-size: 15px;
+$article_acessorios-color: rgb(30, 20, 220);
+
+$horizontal-imagesacc-padding: 30px;
+$horizontal-imagesacc-justify-content: center;
+$horizontal-imagesacc-img-width: auto;
+$horizontal-imagesacc-img-height: 230px;
+$horizontal-imagesacc-img-margin-right: 10px;
+
+$tranfor-transition: transform 0.3s ease;
+$tranfor-hover-transform: scale(1.1);
+
+// Footer //
+
+$footer-background-color: rgb(97, 177, 161);
+$footer-padding: 10px;
+$footer5-justify-content: flex-end;
+$footer5-align-items: flex-end;
+$ul_footer_acessorios-display: flex;
+$ul_footer_acessorios-flex-direction: row;
+$ul_footer_acessorios-list-style: none;
+$ul_footer_acessorios-margin: 0;
+$ul_footer_acessorios-padding: 0;
+$ul_footer_acessorios-li-margin-right: 15px;
+$ul_footer_acessorios-img-width: 60px;
+$ul_footer_acessorios-img-height: 60px;
+
+// Mobile //
+
+
+$acessoriosm-grid-template-columns: 1fr;
+
+$imgacessorios1-padding-left: 15px;
+
+$divacessorios1-font-size: 20px;
+
+$article_acesorios-ul_footer_acessorios-padding: 0;
+
+$ul_footer_acessorios-li-a-img-width: 30px;
+$ul_footer_acessorios-li-a-img-padding: 5px;
+
+

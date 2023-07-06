@@ -1,116 +1,127 @@
-.barra {
-  font-family: cursive;
-  font-size: 35px;
+@keyframes vibracion {
+  0% {
+    transform: translateZ(0);
+  }
+  25% {
+    transform: translateZ(-5px) rotate(1deg);
+  }
+  50% {
+    transform: translateZ(5px) rotate(-1deg);
+  }
+  75% {
+    transform: translateZ(-5px) rotate(-1deg);
+  }
+  100% {
+    transform: translateZ(0);
+  }
 }
-.barrah {
+header .barrah {
   margin: 30px 0 0 0;
 }
-.barrah li a {
-  transition: transform 0.7s;
+header .barrah ul {
+  background-color: aqua;
 }
-.barra li a:hover {
-  transform: scale(0.7);
+header .iconorus {
+  height: 75px;
+  width: 75px;
 }
-.ganalealfrio img {
-  height: 330px;
-  width: 330px;
-  padding: 170px 0 0 40px;
+header h1 {
+  color: #131313;
+  text-align: center;
+  font-size: 90px;
+  font-family: cursive;
+  padding-top: 50px;
 }
-.imgindex {
+header .barra {
+  font-family: Arial, sans-serif;
+  font-size: 35px;
+}
+header .barra:hover {
+  transform: scale(1.2);
+}
+header .barra li a {
+  transition: transform 0.3s;
+}
+header .barra li a:hover {
+  transform: scale(1.5);
+}
+header .nav {
+  animation: backgroundAnimation 3s infinite alternate;
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-color: aqua;
+  }
+  50% {
+    background-color: rgb(255, 255, 0);
+  }
+  100% {
+    background-color: aqua;
+  }
+}
+section .h2index {
+  padding: 0 0 30px;
+  font-family: cursive;
+}
+section .colorflechas {
+  background-color: black;
+}
+section .imgindex {
   height: auto;
   width: auto;
   padding: 0 0 40px;
   margin: 0 auto;
   align-items: center;
 }
-.h2index {
-  padding: 0 0 30px;
-  font-family: cursive;
-
-}
-.iconorus {
-  height: 75px;
-  width: 75px;
-}
-.barrah ul {
-  background-color: aqua;
-}
-.barra:hover {
-  transform: scale(1.1);
-}
-@keyframes moveTitle {
-  0% {
-    transform: translateX(-9px);
-  }
-
-  50% {
-    transform: translateX(9px);
-  }
-
-  100% {
-    transform: translateX(-9px);
-  }
-}
-h1 {
-  color: rgb(13, 13, 13);
-  text-align: center;
-  font-size: 90px;
-  font-family: cursive;
-  padding-top: 50px;
-  animation: moveTitle 2s infinite alternate;
-  
-}
-.carrusel {
+section .carrusel {
   height: 40%;
   width: 25%;
   margin: 0 auto;
   padding: 40px;
 }
-.articleindex {
+section .articleindex {
   color: aliceblue;
   padding: 50px 50px 0 30px;
-  border: 1px solid yellow;
   background-color: cornflowerblue;
-
 }
-.footer1 {
+
+footer {
+  background-color: rgb(97, 177, 161);
+  padding: 10px;
+}
+footer .footer1 {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  padding: 10px;
-  background-color: aqua;
 }
-.footer1 .mainfooter {
+footer .mainfooter {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
 }
-.footer1 .mainfooter ul {
+footer .mainfooter ul {
   display: flex;
   flex-direction: row;
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.footer1 .mainfooter li {
+footer .mainfooter li {
   margin-right: 15px;
 }
-.footer1 .mainfooter img {
+footer .mainfooter img {
   width: 60px;
   height: 60px;
 }
-.colorflechas {
-  background-color: black;
-}
+
 @media (min-width: 768px) {
   .nav {
     padding: 20px;
   }
-
   .h2index {
     font-size: 24px;
   }
-
   .imgindex {
     width: 30%;
   }
@@ -119,29 +130,61 @@ h1 {
   .carousel-item img {
     width: 110%;
   }
-
   .carousel-inner {
     margin-left: -5%;
     margin-right: -5%;
   }
 }
+header .h1chicos {
+  text-align: center;
+  padding: 10px;
+  margin: 20px 0 40px;
+  color: aliceblue;
+  background-color: coral;
+  font-family: Arial, Helvetica, sans-serif;
+  animation: moveText 4s infinite alternate;
+}
+header .navchicos ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+header .navchicos ul li {
+  margin-bottom: 10px;
+  font-size: 37px;
+  font-family: cursive;
+  transition: transform 1s;
+}
+header .navchicos ul li a {
+  text-decoration: none;
+  color: black;
+}
+header .navchicos ul li:hover {
+  transform: scale(0.9);
+}
 
-
-/* PAGINA DE CHICOS */
-
-
-.divchicosmoda {
+section .chicosm {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+section .chicosm * {
+  flex: 3;
+}
+section .divchicosmoda {
   position: relative;
 }
-.divchicosmoda img {
-  max-width: 100%;
+section .divchicosmoda img {
+  max-width: 150%;
   height: auto;
   transition: transform 0.3s ease;
 }
-.divchicosmoda img:hover {
+section .divchicosmoda img:hover {
   transform: scale(1.1);
 }
-.text_encimah {
+section .divchicosmoda .text_encimah {
   position: absolute;
   bottom: 10px;
   left: 50%;
@@ -151,323 +194,273 @@ h1 {
   padding: 10px;
   font-size: 16px;
 }
-.chicosm {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-}
-.h1chicos {
-  text-align: center;
-  padding: 10px;
-  margin: 20px 0 40px;
-  color: aliceblue;
-  background-color: coral;
-  font-family: Arial, Helvetica, sans-serif;
-  animation: moveText 4s infinite alternate;
-}
-@keyframes moveText {
-  0% {
-    transform: translateX(0);
-  }
 
-  50% {
-    transform: translateX(50px);
-  }
-
-  100% {
-    transform: translateX(0);/
-  }
-}
-.navchicos ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-}
-.navchicos ul li {
-  margin-bottom: 10px;
-  font-size: 37px;
-  font-family: cursive;
-  transition: transform 1.0s;
-}
-.navchicos ul li a {
-  text-decoration: none;
-  color: black;
-}
-.navchicos ul li:hover {
-  transform: scale(0.9);
-}
-.imgchicos1 {
-  height: 110px;
-  padding: 0 0 15px 15px;
-}
-.divchicos1 {
-  background-color: rgb(42, 106, 129);
-  font-size: 24px;
-  border: 2px solid black;
-}
-.divchicos2 {
-  background-color: black;
-}
-.horizontal-imagesch {
-  display: flex;
-  list-style-type: none;
-  padding: 30px;
-  justify-content: center;
-}
-.horizontal-imagesch img {
-  width: auto;
-  height: 230px;
-  margin-right: 10px;
-}
-.footer2 {
-  display: flex;
-  justify-content: flex-end;
-  background-color: antiquewhite;
-}
-.ul_footer_chicos {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  list-style-type: none;
-}
-.ul_footer_chicos li {
-  margin-bottom: 10px;
-}
-.ul_footer_chicos li a {
-  display: block;
-}
-.ul_footer_chicos li a img {
-  width: 60px;
-  height: auto;
-  padding: 10px;
-}
 .article_chicos {
   font-family: cursive;
   padding: 0 15px;
   font-size: 15px;
   color: rgb(30, 177, 210);
 }
+
+.imgchicos1 {
+  height: 110px;
+  padding: 0 0 15px 15px;
+}
+
+.divchicos1 {
+  background-color: rgb(42, 106, 129);
+  font-size: 24px;
+  border: 2px solid black;
+}
+
+.divchicos2 {
+  background-color: black;
+}
+
+.horizontal-imagesch {
+  display: flex;
+  list-style-type: none;
+  padding: 30px;
+}
+.horizontal-imagesch img {
+  width: auto;
+  height: 230px;
+  margin-right: 10px;
+}
+
+footer {
+  background-color: rgb(97, 177, 161);
+  padding: 10px;
+}
+footer .footer2 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+footer main {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+footer main .ul_footer_chicos {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer main li {
+  margin-right: 15px;
+}
+footer main img {
+  width: 60px;
+  height: 60px;
+}
+
+/* Mobile */
 @media (max-width: 767px) {
   body {
     padding: 10px;
   }
-
   header {
     text-align: center;
   }
-
   .navchicos ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 0;
   }
-
-  .navchicos li {
+  .navchicos ul li {
     margin: 5px;
   }
-
-  .accordion-button divh2 {
+  .accordion-button div h2 {
     text-align: center;
   }
-
   .article_chicos .row {
     flex-direction: column;
   }
-
   .divchicosmoda {
     margin-bottom: 20px;
   }
-
   .horizontal-imagesch {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 0;
   }
-
   .horizontal-imagesch li {
     margin: 5px;
     flex-basis: 50%;
   }
-
   .imgchicos1 {
     max-width: 100%;
     height: auto;
   }
 }
-
-
 /* PAGINA CHICAS */
-
-.h1_chicas {
+header .h1_chicas {
   background-color: rgb(188, 144, 188);
   font-size: 70px;
   padding: 20px 0 20px 0;
   margin-top: 20px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-.navchicas .h2chicast {
+header .navchicas .h2chicast {
   text-align: center;
   font-family: cursive;
   font-size: 55px;
   text-decoration: underline;
   margin-top: -120px;
 }
-.accordion-item img {
-  max-width: 100%;
-  height: auto;
-}
-.chicasm {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  padding: 30px;
-}
-.navchicas ul li {
+header .navchicas ul li {
   list-style-type: none;
   padding: 20px;
   font-size: 30px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
-.navchicas ul li a {
+header .navchicas ul li a {
   text-decoration: none;
 }
-.li1chicas {
-  padding: 0 30px;
-  font-family: cursive;
-}
-.imgchicas1 {
-  height: 110px;
-  padding: 0 0 15px 430px;
-}
-.divchicas1 {
-  background-color: rgb(188, 144, 188);
-  font-size: 40px;
-  border: 2px solid black;
-  font-family: cursive;
-}
-.divchicas2 {
-  background-color: black;
-}
-.horizontal-imagesm {
+
+section .chicasm {
   display: flex;
-  list-style-type: none;
   padding: 30px;
-  justify-content: center;
 }
-.horizontal-imagesm img {
-  width: auto;
-  height: 230px;
-  margin-right: 10px;
-  transition: transform 0.7s;
+section .chicasm * {
+  flex: 3;
 }
-.horizontal-imagesm img:hover {
-  transform: scale(1.1);
-}
-.cat1:hover {
-  transform: scale(1.1);
-}
-.footer3 {
-  display: flex;
-  justify-content: flex-end;
-  background-color: antiquewhite;
-}
-.ul_footer_chicas {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  list-style-type: none;
-}
-.ul_footer_chicas li {
-  margin-bottom: 10px;
-}
-.ul_footer_chicas li a {
-  display: block;
-}
-.ul_footer_chicas li a img {
-  width: 60px;
+section .accordion-item img {
+  max-width: 100%;
   height: auto;
-  padding: 20px 0 0 20px;
 }
-.article_chicas {
+section .cat1:hover {
+  transform: scale(1.1);
+}
+section .article_chicas {
   font-family: cursive;
   padding: 0 0 0 30px;
   font-size: 15px;
   color: rgb(5, 6, 6);
 }
-.article_chicas p {
+section .article_chicas p {
   margin-bottom: 10px;
 }
-.article_chicas ul {
+section .article_chicas ul {
   list-style-type: disc;
   margin-left: 20px;
 }
-.imgchicass {
+section .imgchicas1 {
+  height: 110px;
+  padding: 0 0 15px 430px;
+}
+section .imgchicass {
   height: 220px;
   width: 220px;
   border-radius: 50%;
   overflow: hidden;
 }
-.imgchicass:hover {
+section .imgchicass:hover {
   transform: scale(1.1);
 }
+section .divchicas1 {
+  background-color: rgb(188, 144, 188);
+  font-size: 40px;
+  border: 2px solid black;
+  font-family: cursive;
+}
+section .divchicas2 {
+  background-color: black;
+}
+section main ul.horizontal-imagesm {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  list-style: none;
+  padding: 0;
+}
+section main ul.horizontal-imagesm li img {
+  width: 150px;
+  height: 150px;
+  transition: transform 0.3s;
+}
+section main ul.horizontal-imagesm li img:hover {
+  transform: scale(1.2);
+}
 
+/* Footer */
+footer {
+  background-color: rgb(97, 177, 161);
+  padding: 10px;
+}
+footer .footer3 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+footer main {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+footer main .ul_footer_chicas {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer main li {
+  margin-right: 10px;
+}
+footer main img {
+  width: 60px;
+  height: 60px;
+}
+
+/* Mobile */
 @media (max-width: 767px) {
   .bodychicas {
     padding-top: 50px;
   }
-
   .h1_chicas {
     font-size: 24px;
   }
-
   .navchicas {
     flex-direction: column;
     align-items: center;
     padding-bottom: 10px;
   }
-
   .navchicas ul {
     margin-top: 20px;
   }
-
-  .h2chicast {
+  .navchicas .h2chicast {
     margin-top: 20px;
   }
-
   .accordion-header h2 {
     font-size: 18px;
   }
-
   .imgchicass {
     width: 100%;
     margin-bottom: 20px;
   }
-
   .horizontal-imagesm {
     padding-left: 0;
   }
-
   .horizontal-imagesm li {
     width: 100%;
     margin-bottom: 20px;
   }
-
   .imgchicas1 {
     height: 100%;
     margin-bottom: 20px;
-    
   }
-
   .footer3 {
     padding-top: 20px;
   }
-  
   .ul_footer_chicas {
     justify-content: center;
   }
-
   .ul_footer_chicas li {
     margin-right: 10px;
   }
@@ -476,31 +469,69 @@ h1 {
     order: 3;
   }
 }
-
 /* PAGINA CALZADOS */
-
-.calzadosm {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-}
-.navcalzados .ulnavcal .barra_calzados {
-  font-size: 30px;
-  margin: 25px;
-  list-style-type: none;
-  font-family: cursive;
-  border-bottom: none; 
-  transition: transform 0.4s; 
-}
-.navcalzados .ulnavcal .barra_calzados:hover {
-  transform: scale(1.05); 
-}
-.h1calzados {
+header .h1calzados {
   padding-top: 20px;
   padding-bottom: 40px;
   font-size: 70px;
   font-family: fantasy;
 }
-.article_calzados main .h3calzados {
+header .h2sub {
+  padding: 0 15px;
+  font-size: 65px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  transition: font-size 0.3s, background-color 0.3s;
+}
+header .h2sub:hover {
+  font-size: 70px;
+  background-color: red;
+}
+
+section .navcalzados .ulnavcal .barra_calzados {
+  font-size: 30px;
+  margin: 25px;
+  list-style-type: none;
+  font-family: cursive;
+  border-bottom: none;
+  transition: transform 0.4s;
+}
+section .navcalzados .ulnavcal .barra_calzados:hover {
+  transform: scale(1.05);
+}
+section .calzadosm {
+  display: flex;
+  padding: 30px;
+}
+section .calzadosm * {
+  flex: 2;
+}
+section .imgcalzadosh3 {
+  padding: 40px 0 0 110px;
+}
+section .imgcalzados1 {
+  height: 110px;
+  padding: 0 0 15px 430px;
+}
+section .divcalzados1 {
+  background-color: rgb(240, 144, 19);
+  font-size: 40px;
+  border: 2px solid black;
+  font-family: cursive;
+  color: aliceblue;
+  margin-top: 30px;
+}
+section .horizontal-imagescal {
+  display: flex;
+  list-style-type: none;
+  padding: 30px;
+  justify-content: center;
+}
+section .horizontal-imagescal img {
+  width: auto;
+  height: 230px;
+  margin-right: 10px;
+}
+section .article_calzados main .h3calzados {
   text-align: center;
   margin-top: 130px;
   text-decoration: underline;
@@ -510,187 +541,172 @@ h1 {
   0% {
     transform: translateZ(0);
   }
-
   25% {
     transform: translateZ(-5px) rotate(1deg);
   }
-
   50% {
     transform: translateZ(5px) rotate(-1deg);
   }
-
   75% {
     transform: translateZ(-5px) rotate(-1deg);
   }
-
   100% {
     transform: translateZ(0);
   }
 }
-.imgcalzadosh3 {
-  padding: 40px 0 0 110px;
+
+footer {
+  background-color: rgb(97, 177, 161);
+  padding: 10px;
 }
-.h2sub {
-  padding: 0 0 0 670px;
-  font-size: 65px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  transition: font-size 0.3s, background-color 0.3s;
-}
-.h2sub:hover {
-  font-size: 70px;
-  background-color: red;
-}
-.imgcalzados1 {
-  height: 110px;
-  padding: 0 0 15px 430px;
-}
-.divcalzados1 {
-  background-color: rgb(240, 144, 19);
-  font-size: 40px;
-  border: 2px solid black;
-  font-family: cursive;
-  color: aliceblue;
-  margin-top: 30px;
-}
-.horizontal-imagescal {
-  display: flex;
-  list-style-type: none;
-  padding: 30px;
-  justify-content: center;
-}
-.horizontal-imagescal img {
-  width: auto;
-  height: 230px;
-  margin-right: 10px;
-}
-.footer4 {
+footer .footer4 {
   display: flex;
   justify-content: flex-end;
-  background-color: antiquewhite;
+  align-items: flex-end;
 }
-.ul_footer_calzados {
+footer main {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  list-style-type: none;
 }
-.ul_footer_calzados li {
-  margin-bottom: 10px;
+footer main .ul_footer_calzados {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-.ul_footer_calzados li a {
-  display: block;
+footer main li {
+  margin-right: 15px;
 }
-.ul_footer_calzados li a img {
+footer main img {
   width: 60px;
-  height: auto;
-  padding: 20px 0 0 20px;
+  height: 60px;
 }
+
+/* Mobile */
 @media (max-width: 767px) {
-  .h3calzados {
-    transform: none; 
-    padding-left: 10px; 
-  }
-
-  .imgcalzadosh3 {
-    width: 50%; 
-  }
-  .h2sub {
-    padding: 0 0 0 15px; 
-    margin-top: 10px; 
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 }
+.h3calzados {
+  transform: none;
+  padding-left: 10px;
+}
 
+.imgcalzadosh3 {
+  width: 50%;
+}
+
+.h2sub {
+  text-align: center;
+  padding: 0 15px;
+  margin-top: 10px;
+}
 
 /* PAGINA ACESSORIOS */
-
-.acessoriosm {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-}
-.h1acessorios{
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+header .h1acessorios {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   padding: 20px;
 }
-.tranfor {
-  transition: transform 0.3s ease;
-}
-.tranfor:hover {
-  transform: scale(1.1);
-}
-.navacessorios ul li a {
+header .navacessorios ul li a {
   text-decoration: none;
   font-family: fantasy;
-  font-size: 30px
+  font-size: 30px;
 }
-.liacessoriosnav{
+header .navacessorios .liacessoriosnav {
   list-style-type: none;
 }
-.divacessorios1 {
+
+section .acessoriosm {
+  display: flex;
+  padding: 30px;
+}
+section .acessoriosm * {
+  flex: 1;
+}
+section .divacessorios1 {
   background-color: rgb(184, 246, 122);
-  font-size: 40px;
+  font-size: 20px;
   border: 2px solid black;
   font-family: cursive;
   color: rgb(9, 18, 27);
 }
-.horizontal-imagesacc {
-  display: flex;
-  list-style-type: none;
-  padding: 30px;
-  justify-content: center;
-}
-.horizontal-imagesacc img {
-  width: auto;
-  height: 230px;
-  margin-right: 10px;
-}
-.footer5 {
-  display: flex;
-  justify-content: flex-end;
-  background-color: antiquewhite;
-}
-.ul_footer_acessorios {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  list-style-type: none;
-}
-.ul_footer_acessorios li {
-  margin-bottom: 10px;
-}
-.ul_footer_acessorios li a {
-  display: block;
-}
-.ul_footer_acessorios li a img {
-  width: 60px;
-  height: auto;
-  padding: 20px 0 0 20px;
-}
-.article_acessorios {
+section .article_acessorios {
   font-family: cursive;
   padding: 0 0 0 30px;
   font-size: 15px;
   color: rgb(30, 20, 220);
 }
+section .horizontal-imagesacc {
+  display: flex;
+  list-style-type: none;
+  padding: 30px;
+  justify-content: center;
+}
+section .horizontal-imagesacc img {
+  width: auto;
+  height: 230px;
+  margin-right: 10px;
+}
+section .tranfor {
+  transition: transform 0.3s ease;
+}
+section .tranfor:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  background-color: rgb(97, 177, 161);
+  padding: 10px;
+}
+footer .footer5 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+footer main {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+footer main .ul_footer_acessorios {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer main li {
+  margin-right: 15px;
+}
+footer main img {
+  width: 60px;
+  height: 60px;
+}
+
 @media (max-width: 768px) {
-  .acessoriosm {
+  section.acessoriosm {
     grid-template-columns: 1fr;
   }
-
   .imgacessorios1 {
     padding-left: 15px;
   }
-
   .divacessorios1 {
     font-size: 20px;
   }
-
   .article_acesorios,
   .ul_footer_acessorios {
     padding: 0;
   }
-
   .ul_footer_acessorios li a img {
     width: 30px;
     padding: 5px;
   }
 }
+
+/*# sourceMappingURL=style.css.map */

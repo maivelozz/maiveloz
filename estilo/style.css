@@ -60,7 +60,7 @@ header .nav {
     background-color: aqua;
   }
 }
-section .h2index {
+section .pindex {
   padding: 0 0 30px;
   font-family: cursive;
 }
@@ -691,7 +691,10 @@ footer main img {
 
 @media (max-width: 768px) {
   section.acessoriosm {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: stretch; 
   }
   .imgacessorios1 {
     padding-left: 15px;
@@ -709,4 +712,4 @@ footer main img {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+

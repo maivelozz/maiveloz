@@ -6,21 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  <link rel="stylesheet" href="./estilo/style.css">
   <title>Rusty</title>
   <meta name="description" content="Descubre el mejor sitio para vestirte a la moda">
   <meta name="keywords" content="ropa de chicos, de chicas, acessorios y calzados">
   <link rel="shortcut icon" href="./iconos/RustyLogoGuava.png" type="rustylogo">
-
+  <link rel="stylesheet" href="./estilo/style.css">
 </head>
 
 <body>
   <header class="barrah">
     <nav>
+      <nav class="navbar bg-body-tertiary"></nav>
       <ul class="nav justify-content-center">
-        <nav class="navbar bg-body-tertiary">
-          </div>
-        </nav>
         <img class="nav-link justify-content-center  iconorus" src="./iconos/RustyLogoGuava.png" alt="Rusty">
         <li class="nav-item">
           <a class="nav-link barra" href="./paginas/chicos.html">CHICOS</a>
@@ -36,7 +33,7 @@
         </li>
         <img class="nav-link justify-content-center  iconorus" src="./iconos/RustyLogoGuava.png" alt="Rusty">
       </ul>
-    </nav>
+      </nav>
     <main>
       <h1>RUSTY</h1>
     </main>
@@ -67,10 +64,10 @@
     <article class="articleindex" class="container-fluid">
       <main class="row">
         <img class="col-lg-4 col-12 imgindex" src="./imagenes/envios.png" alt="envios">
-        <h2 class="col-lg-3 col-7 h2index ">
+        <p class="col-lg-3 col-7 pindex ">
           El Regalo ideal también lo encontrás en Rusty online, elegí ahora. Descubrí lo mejor de Rusty en nuestra web.
           Jeans. Camperas. Remeras. Canguros. Calzado. Pantalones.
-        </h2>
+        </p>
         <img class="col-lg-5 col-8 imgindex" src="./imagenes/envios.png" alt="envios">
       </main>
   </section>
@@ -89,6 +86,18 @@
         </li>
       </ul>
     </main>
+    <div>
+    <h4>Ingrese datos en el formulario de contacto</h4>
+    <form action="" method="post"> 
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre">
+    <br>
+    <label for="correo">Correo electrónico:</label>
+    <input type="text" id="correo">
+    <br>
+    <input type="button" value="Enviar" id="btnEnviar">
+    </form>
+    </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
